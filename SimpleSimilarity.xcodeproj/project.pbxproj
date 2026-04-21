@@ -13,8 +13,6 @@
 		950EF2A11F49E9B400174155 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 950EF29F1F49E9B400174155 /* Main.storyboard */; };
 		950EF2A31F49E9B400174155 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 950EF2A21F49E9B400174155 /* Assets.xcassets */; };
 		950EF2A61F49E9B400174155 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 950EF2A41F49E9B400174155 /* LaunchScreen.storyboard */; };
-		950EF2B11F49E9B400174155 /* SimpleSimilarityTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 950EF2B01F49E9B400174155 /* SimpleSimilarityTests.swift */; };
-		950EF2BC1F49E9B400174155 /* SimpleSimilarityUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 950EF2BB1F49E9B400174155 /* SimpleSimilarityUITests.swift */; };
 		950EF2D71F49EA2C00174155 /* SimpleSimilarityFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 950EF2CE1F49EA2C00174155 /* SimpleSimilarityFramework.framework */; };
 		950EF2DE1F49EA2C00174155 /* TextualImportTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 950EF2DD1F49EA2C00174155 /* TextualImportTests.swift */; };
 		950EF2E01F49EA2C00174155 /* SimpleSimilarityFramework.h in Headers */ = {isa = PBXBuildFile; fileRef = 950EF2D01F49EA2C00174155 /* SimpleSimilarityFramework.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -33,20 +31,6 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		950EF2AD1F49E9B400174155 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 950EF28E1F49E9B300174155 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 950EF2951F49E9B400174155;
-			remoteInfo = SimpleSimilarity;
-		};
-		950EF2B81F49E9B400174155 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 950EF28E1F49E9B300174155 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 950EF2951F49E9B400174155;
-			remoteInfo = SimpleSimilarity;
-		};
 		9558D344286A278900810CEE /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 950EF28E1F49E9B300174155 /* Project object */;
@@ -79,12 +63,6 @@
 		950EF2A21F49E9B400174155 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		950EF2A51F49E9B400174155 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		950EF2A71F49E9B400174155 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		950EF2AC1F49E9B400174155 /* SimpleSimilarityTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SimpleSimilarityTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		950EF2B01F49E9B400174155 /* SimpleSimilarityTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleSimilarityTests.swift; sourceTree = "<group>"; };
-		950EF2B21F49E9B400174155 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		950EF2B71F49E9B400174155 /* SimpleSimilarityUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SimpleSimilarityUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		950EF2BB1F49E9B400174155 /* SimpleSimilarityUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleSimilarityUITests.swift; sourceTree = "<group>"; };
-		950EF2BD1F49E9B400174155 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		950EF2CE1F49EA2C00174155 /* SimpleSimilarityFramework.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SimpleSimilarityFramework.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		950EF2D01F49EA2C00174155 /* SimpleSimilarityFramework.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SimpleSimilarityFramework.h; sourceTree = "<group>"; };
 		950EF2D11F49EA2C00174155 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -112,20 +90,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		950EF2A91F49E9B400174155 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		950EF2B41F49E9B400174155 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		950EF2CA1F49EA2C00174155 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -148,8 +112,6 @@
 			isa = PBXGroup;
 			children = (
 				950EF2981F49E9B400174155 /* SimpleSimilarity */,
-				950EF2AF1F49E9B400174155 /* SimpleSimilarityTests */,
-				950EF2BA1F49E9B400174155 /* SimpleSimilarityUITests */,
 				950EF2CF1F49EA2C00174155 /* SimpleSimilarityFramework */,
 				950EF2DC1F49EA2C00174155 /* SimpleSimilarityFrameworkTests */,
 				950EF2971F49E9B400174155 /* Products */,
@@ -160,8 +122,6 @@
 			isa = PBXGroup;
 			children = (
 				950EF2961F49E9B400174155 /* SimpleSimilarity.app */,
-				950EF2AC1F49E9B400174155 /* SimpleSimilarityTests.xctest */,
-				950EF2B71F49E9B400174155 /* SimpleSimilarityUITests.xctest */,
 				950EF2CE1F49EA2C00174155 /* SimpleSimilarityFramework.framework */,
 				950EF2D61F49EA2C00174155 /* SimpleSimilarityFrameworkTests.xctest */,
 			);
@@ -181,24 +141,6 @@
 				950EF2A71F49E9B400174155 /* Info.plist */,
 			);
 			path = SimpleSimilarity;
-			sourceTree = "<group>";
-		};
-		950EF2AF1F49E9B400174155 /* SimpleSimilarityTests */ = {
-			isa = PBXGroup;
-			children = (
-				950EF2B01F49E9B400174155 /* SimpleSimilarityTests.swift */,
-				950EF2B21F49E9B400174155 /* Info.plist */,
-			);
-			path = SimpleSimilarityTests;
-			sourceTree = "<group>";
-		};
-		950EF2BA1F49E9B400174155 /* SimpleSimilarityUITests */ = {
-			isa = PBXGroup;
-			children = (
-				950EF2BB1F49E9B400174155 /* SimpleSimilarityUITests.swift */,
-				950EF2BD1F49E9B400174155 /* Info.plist */,
-			);
-			path = SimpleSimilarityUITests;
 			sourceTree = "<group>";
 		};
 		950EF2CF1F49EA2C00174155 /* SimpleSimilarityFramework */ = {
@@ -269,42 +211,6 @@
 			productReference = 950EF2961F49E9B400174155 /* SimpleSimilarity.app */;
 			productType = "com.apple.product-type.application";
 		};
-		950EF2AB1F49E9B400174155 /* SimpleSimilarityTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 950EF2C31F49E9B400174155 /* Build configuration list for PBXNativeTarget "SimpleSimilarityTests" */;
-			buildPhases = (
-				950EF2A81F49E9B400174155 /* Sources */,
-				950EF2A91F49E9B400174155 /* Frameworks */,
-				950EF2AA1F49E9B400174155 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				950EF2AE1F49E9B400174155 /* PBXTargetDependency */,
-			);
-			name = SimpleSimilarityTests;
-			productName = SimpleSimilarityTests;
-			productReference = 950EF2AC1F49E9B400174155 /* SimpleSimilarityTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
-		950EF2B61F49E9B400174155 /* SimpleSimilarityUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 950EF2C61F49E9B400174155 /* Build configuration list for PBXNativeTarget "SimpleSimilarityUITests" */;
-			buildPhases = (
-				950EF2B31F49E9B400174155 /* Sources */,
-				950EF2B41F49E9B400174155 /* Frameworks */,
-				950EF2B51F49E9B400174155 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				950EF2B91F49E9B400174155 /* PBXTargetDependency */,
-			);
-			name = SimpleSimilarityUITests;
-			productName = SimpleSimilarityUITests;
-			productReference = 950EF2B71F49E9B400174155 /* SimpleSimilarityUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
-		};
 		950EF2CD1F49EA2C00174155 /* SimpleSimilarityFramework */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 950EF2E51F49EA2C00174155 /* Build configuration list for PBXNativeTarget "SimpleSimilarityFramework" */;
@@ -354,14 +260,6 @@
 						CreatedOnToolsVersion = 9.0;
 						LastSwiftMigration = 1020;
 					};
-					950EF2AB1F49E9B400174155 = {
-						CreatedOnToolsVersion = 9.0;
-						TestTargetID = 950EF2951F49E9B400174155;
-					};
-					950EF2B61F49E9B400174155 = {
-						CreatedOnToolsVersion = 9.0;
-						TestTargetID = 950EF2951F49E9B400174155;
-					};
 					950EF2CD1F49EA2C00174155 = {
 						CreatedOnToolsVersion = 9.0;
 						LastSwiftMigration = 1020;
@@ -387,8 +285,6 @@
 			projectRoot = "";
 			targets = (
 				950EF2951F49E9B400174155 /* SimpleSimilarity */,
-				950EF2AB1F49E9B400174155 /* SimpleSimilarityTests */,
-				950EF2B61F49E9B400174155 /* SimpleSimilarityUITests */,
 				950EF2CD1F49EA2C00174155 /* SimpleSimilarityFramework */,
 				950EF2D51F49EA2C00174155 /* SimpleSimilarityFrameworkTests */,
 			);
@@ -405,20 +301,6 @@
 				950EF2F91F49FA5000174155 /* sample.csv in Resources */,
 				950EF2A11F49E9B400174155 /* Main.storyboard in Resources */,
 				95118C92207A715500E732F3 /* newspaper.csv in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		950EF2AA1F49E9B400174155 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		950EF2B51F49E9B400174155 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -449,22 +331,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		950EF2A81F49E9B400174155 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				950EF2B11F49E9B400174155 /* SimpleSimilarityTests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		950EF2B31F49E9B400174155 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				950EF2BC1F49E9B400174155 /* SimpleSimilarityUITests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		950EF2C91F49EA2C00174155 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -491,16 +357,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		950EF2AE1F49E9B400174155 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 950EF2951F49E9B400174155 /* SimpleSimilarity */;
-			targetProxy = 950EF2AD1F49E9B400174155 /* PBXContainerItemProxy */;
-		};
-		950EF2B91F49E9B400174155 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 950EF2951F49E9B400174155 /* SimpleSimilarity */;
-			targetProxy = 950EF2B81F49E9B400174155 /* PBXContainerItemProxy */;
-		};
 		9558D345286A278900810CEE /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 950EF2CD1F49EA2C00174155 /* SimpleSimilarityFramework */;
@@ -677,68 +533,6 @@
 			};
 			name = Release;
 		};
-		950EF2C41F49E9B400174155 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				DEVELOPMENT_TEAM = B8AN6892A4;
-				INFOPLIST_FILE = SimpleSimilarityTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.julius.de.SimpleSimilarityTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SimpleSimilarity.app/SimpleSimilarity";
-			};
-			name = Debug;
-		};
-		950EF2C51F49E9B400174155 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				DEVELOPMENT_TEAM = B8AN6892A4;
-				INFOPLIST_FILE = SimpleSimilarityTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.julius.de.SimpleSimilarityTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SimpleSimilarity.app/SimpleSimilarity";
-			};
-			name = Release;
-		};
-		950EF2C71F49E9B400174155 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				DEVELOPMENT_TEAM = B8AN6892A4;
-				INFOPLIST_FILE = SimpleSimilarityUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.julius.de.SimpleSimilarityUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = SimpleSimilarity;
-			};
-			name = Debug;
-		};
-		950EF2C81F49E9B400174155 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				DEVELOPMENT_TEAM = B8AN6892A4;
-				INFOPLIST_FILE = SimpleSimilarityUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.julius.de.SimpleSimilarityUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = SimpleSimilarity;
-			};
-			name = Release;
-		};
 		950EF2E61F49EA2C00174155 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -837,24 +631,6 @@
 			buildConfigurations = (
 				950EF2C11F49E9B400174155 /* Debug */,
 				950EF2C21F49E9B400174155 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		950EF2C31F49E9B400174155 /* Build configuration list for PBXNativeTarget "SimpleSimilarityTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				950EF2C41F49E9B400174155 /* Debug */,
-				950EF2C51F49E9B400174155 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		950EF2C61F49E9B400174155 /* Build configuration list for PBXNativeTarget "SimpleSimilarityUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				950EF2C71F49E9B400174155 /* Debug */,
-				950EF2C81F49E9B400174155 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
