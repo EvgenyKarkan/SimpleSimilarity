@@ -7,7 +7,7 @@
 //
 
 import XCTest
-@testable import SimpleSimilarityFramework
+@testable import SimpleSimilarity
 
 class MatchingEngineLargeCorpusTests: XCTestCase {
 
@@ -25,7 +25,8 @@ class MatchingEngineLargeCorpusTests: XCTestCase {
             return
         }
 
-        guard let csvPath = Bundle.main.path(forResource: "newspaper", ofType: "csv") else {
+        guard let csvPath = Bundle.module.path(forResource: "newspaper", ofType: "csv") else {
+            fatalError()
             return
         }
 
@@ -33,6 +34,7 @@ class MatchingEngineLargeCorpusTests: XCTestCase {
         do {
             try csvImporter.loadFile(at: csvPath)
         } catch {
+            fatalError()
             print("Reading the csv file caused an exception.")
         }
 
@@ -90,7 +92,8 @@ class MatchingEngineLargeCorpusTests: XCTestCase {
         let asyncExpectation = expectation(description: "asyncWait")
 
         // get queries
-        guard let csvPath = Bundle.main.path(forResource: "newspaper", ofType: "csv") else {
+        guard let csvPath = Bundle.module.path(forResource: "newspaper", ofType: "csv") else {
+            fatalError()
             return
         }
 
@@ -99,6 +102,7 @@ class MatchingEngineLargeCorpusTests: XCTestCase {
             try csvImporter.loadFile(at: csvPath)
         } catch {
             print("Reading the csv file caused an exception.")
+            fatalError()
         }
 
         guard let fileContents = csvImporter.fileContents else {
@@ -128,7 +132,8 @@ class MatchingEngineLargeCorpusTests: XCTestCase {
         let asyncExpectation = expectation(description: "asyncWait")
 
         // get queries
-        guard let csvPath = Bundle.main.path(forResource: "newspaper", ofType: "csv") else {
+        guard let csvPath = Bundle.module.path(forResource: "newspaper", ofType: "csv") else {
+            fatalError()
             return
         }
 
@@ -137,6 +142,7 @@ class MatchingEngineLargeCorpusTests: XCTestCase {
             try csvImporter.loadFile(at: csvPath)
         } catch {
             print("Reading the csv file caused an exception.")
+            fatalError()
         }
 
         guard let fileContents = csvImporter.fileContents else {
@@ -172,6 +178,4 @@ class MatchingEngineLargeCorpusTests: XCTestCase {
 
         waitForExpectations(timeout: 60)
     }
-
-    
 }

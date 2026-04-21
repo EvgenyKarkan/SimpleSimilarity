@@ -7,12 +7,12 @@
 //
 
 import XCTest
-@testable import SimpleSimilarityFramework
+@testable import SimpleSimilarity
 
 class TextualImportTests: XCTestCase {
     
     func testCsvImport() {
-        guard let csvPath = Bundle.main.path(forResource: "sample", ofType: "csv") else {
+        guard let csvPath = Bundle.module.path(forResource: "sample", ofType: "csv") else {
             XCTFail("CSV file could not be read.")
             return
         }
@@ -27,7 +27,7 @@ class TextualImportTests: XCTestCase {
     }
 
     func testCsvImportMatchesOutput() {
-        guard let csvPath = Bundle.main.path(forResource: "sample", ofType: "csv") else {
+        guard let csvPath = Bundle.module.path(forResource: "sample", ofType: "csv") else {
             XCTFail("CSV file could not be read.")
             return
         }

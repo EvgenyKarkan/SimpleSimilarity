@@ -7,12 +7,12 @@
 //
 
 import XCTest
-@testable import SimpleSimilarityFramework
+@testable import SimpleSimilarity
 
 class MatchingEngineTests: XCTestCase {
 
     func testMatchingEngineDidFill() {
-        guard let csvPath = Bundle.main.path(forResource: "sample", ofType: "csv") else {
+        guard let csvPath = Bundle.module.path(forResource: "sample", ofType: "csv") else {
             return
         }
 
@@ -75,7 +75,7 @@ class MatchingEngineTests: XCTestCase {
     
     func testQueryFoundInCorpusOne() {
     
-        guard let csvPath = Bundle.main.path(forResource: "sample", ofType: "csv") else {
+        guard let csvPath = Bundle.module.path(forResource: "sample", ofType: "csv") else {
             return
         }
         
@@ -116,7 +116,7 @@ class MatchingEngineTests: XCTestCase {
     
     func testQueryFoundInCorpusTwo() {
         
-        guard let csvPath = Bundle.main.path(forResource: "sample", ofType: "csv") else {
+        guard let csvPath = Bundle.module.path(forResource: "sample", ofType: "csv") else {
             return
         }
         
@@ -159,7 +159,7 @@ class MatchingEngineTests: XCTestCase {
     
     func testQueryNotFoundInCorpus() {
         
-        guard let csvPath = Bundle.main.path(forResource: "sample", ofType: "csv") else {
+        guard let csvPath = Bundle.module.path(forResource: "sample", ofType: "csv") else {
             return
         }
         
@@ -192,7 +192,7 @@ class MatchingEngineTests: XCTestCase {
     
     func testListOfResultsForQuery() {
         
-        guard let csvPath = Bundle.main.path(forResource: "sample", ofType: "csv") else {
+        guard let csvPath = Bundle.module.path(forResource: "sample", ofType: "csv") else {
             return
         }
         

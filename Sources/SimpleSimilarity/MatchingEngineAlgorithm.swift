@@ -59,7 +59,9 @@ internal struct MatchingEngineAlgortihm {
                 stringsToRemove.insert(string as! String)
             }
         }
-        
+
+        print("medianCount -> \(medianCount)")
+
         return stringsToRemove
     }
     

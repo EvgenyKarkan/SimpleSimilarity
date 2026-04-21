@@ -7,8 +7,7 @@
 //
 
 import XCTest
-@testable import SimpleSimilarityFramework
-
+@testable import SimpleSimilarity
 
 class IndexMatrixTests: XCTestCase {
 
