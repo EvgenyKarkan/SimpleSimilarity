@@ -97,36 +97,22 @@ open class MatchingEngine {
             
             // determine frequent and infrequent words
             self.stopwords = MatchingEngineAlgortihm.determineFrequentAndInfrequentWords(in: self.allWords, onlyFrequent: onlyRemoveFrequentStopwords)
-            
-            // create dispatch group so removal of stopwords can happen on 2 seperate queues
-            let localStopwords = self.stopwords
-            let dispatchGroup = DispatchGroup()
-            
-            // remove infrequent and frequent words
-            dispatchGroup.enter()
-            DispatchQueue.global().async {
-                processedCorpus.forEach({ (corpusEntry) in
-                    corpusEntry.bagOfWords = MatchingEngineAlgortihm.remove(stopwords: localStopwords, from: corpusEntry.bagOfWords)
-                })
-                
-                dispatchGroup.leave()
-            }
-            
-            // create a mapping of a bag of words to the strings that generate the same bag of words
-            dispatchGroup.enter()
-            DispatchQueue.global().async {
-                allPreprocessedEntries.forEach({ [weak self] (corpusEntry) in
-                    // unfortunately we need to remove the stopwords again here
-                    corpusEntry.bagOfWords = MatchingEngineAlgortihm.remove(stopwords: localStopwords, from: corpusEntry.bagOfWords)
-                    
-                    self?.stringsForBagsOfWords.add(corpusEntry: corpusEntry)
-                })
-                
-                dispatchGroup.leave()
-            }
 
-            // wait till the 2 dispatch queues finished executing
-            dispatchGroup.wait()
+            // Remove stopwords from all entries first (avoiding data race)
+            let localStopwords = self.stopwords
+
+            // remove infrequent and frequent words
+            // create a mapping of a bag of words to the strings that generate the same bag of words
+
+            // Process all entries sequentially to avoid data race on bagOfWords
+            processedCorpus.forEach({ (corpusEntry) in
+                corpusEntry.bagOfWords = MatchingEngineAlgortihm.remove(stopwords: localStopwords, from: corpusEntry.bagOfWords)
+            })
+
+            allPreprocessedEntries.forEach({ [weak self] (corpusEntry) in
+                // bagOfWords already updated above
+                self?.stringsForBagsOfWords.add(corpusEntry: corpusEntry)
+            })
 
             self.corpus = self.convertCorpusToIndexMatrix(corpus: processedCorpus, allStrings: self.allWords, stopwords: self.stopwords)
             self.isFilled = true
